@@ -95,63 +95,86 @@ export default function Home() {
           <h2 className="text-xs font-semibold uppercase tracking-widest text-rose-500">News & Updates</h2>
           <h3 className="mt-1 text-2xl font-bold text-white">Latest Articles</h3>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {/* Berita 1 */}
-            <article className="flex flex-col justify-between rounded-xl border border-stone-800/80 bg-stone-900/80 p-5 transition hover:border-rose-900/80">
-              <div>
-                <span className="text-[11px] font-medium text-rose-400">17 Agustus 2026</span>
-                <h4 className="mt-2 text-base font-semibold leading-snug text-stone-100 hover:text-rose-300">
-                  <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka">
-                    Program Pemberdayaan Pengrajin Batu Mulia Cempaka Berjalan: Dari Modernisasi Produksi hingga Pendampingan NIB
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Berita 1 (Dengan Thumbnail) */}
+            <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
+              <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka" className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="/batu-mulia.jpg" // sesuaikan nama file di folder public
+                  alt="Program Pemberdayaan Pengrajin Batu Mulia Cempaka"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </a>
+              <div className="flex flex-1 flex-col justify-between p-5">
+                <div>
+                  <span className="text-[11px] font-medium text-rose-400">17 Agustus 2026</span>
+                  <h4 className="mt-2 text-base font-semibold leading-snug text-stone-100 hover:text-rose-300">
+                    <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka">
+                      Program Pemberdayaan Pengrajin Batu Mulia Cempaka Berjalan: Dari Modernisasi Produksi hingga Pendampingan NIB
+                    </a>
+                  </h4>
+                  <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
+                    Program Pengabdian kepada Masyarakat (PkM) tim ULM mendorong transformasi pengrajin batu mulia Cempaka dari pola produksi tradisional menuju usaha modern, produktif, dan berlegalitas.
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-stone-800">
+                  <a
+                    href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka"
+                    className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300"
+                  >
+                    Read Article <span className="ml-1">→</span>
                   </a>
-                </h4>
-                <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
-                  Program Pengabdian kepada Masyarakat (PkM) tim ULM mendorong transformasi pengrajin batu mulia Cempaka dari pola produksi tradisional menuju usaha modern, produktif, dan berlegalitas.
-                </p>
-              </div>
-              <div className="mt-5 pt-3 border-t border-stone-800">
-                <a
-                  href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka"
-                  className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300"
-                >
-                  Read Article <span className="ml-1">→</span>
-                </a>
+                </div>
               </div>
             </article>
 
             {/* Berita 2 */}
-            <article className="flex flex-col justify-between rounded-xl border border-stone-800/80 bg-stone-900/80 p-5 transition hover:border-rose-900/80">
-              <div>
-                <span className="text-[11px] font-medium text-rose-400">15 Agustus 2026</span>
-                <h4 className="mt-2 text-base font-semibold text-stone-100 hover:text-rose-300">
-                  <a href="#">Penelitian Geopark Meratus</a>
-                </h4>
-                <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
-                  Riset dan eksplorasi geodiversitas serta potensi warisan geologi di kawasan Meratus.
-                </p>
+            <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
+              <div className="relative h-48 w-full bg-stone-800/50 flex items-center justify-center text-stone-600 text-xs">
+                {/* Tempatkan <Image /> jika ada gambar */}
+                <span>No Image Available</span>
               </div>
-              <div className="mt-5 pt-3 border-t border-stone-800">
-                <a href="#" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
-                  Read Article <span className="ml-1">→</span>
-                </a>
+              <div className="flex flex-1 flex-col justify-between p-5">
+                <div>
+                  <span className="text-[11px] font-medium text-rose-400">15 Agustus 2026</span>
+                  <h4 className="mt-2 text-base font-semibold text-stone-100 hover:text-rose-300">
+                    <a href="#">Penelitian Geopark Meratus</a>
+                  </h4>
+                  <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
+                    Riset dan eksplorasi geodiversitas serta potensi warisan geologi di kawasan Meratus.
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-stone-800">
+                  <a href="#" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
+                    Read Article <span className="ml-1">→</span>
+                  </a>
+                </div>
               </div>
             </article>
 
             {/* Berita 3 */}
-            <article className="flex flex-col justify-between rounded-xl border border-stone-800/80 bg-stone-900/80 p-5 transition hover:border-rose-900/80">
-              <div>
-                <span className="text-[11px] font-medium text-rose-400">01 Agustus 2026</span>
-                <h4 className="mt-2 text-base font-semibold text-stone-100 hover:text-rose-300">
-                  <a href="#">Eksplorasi Mineral Kalimantan</a>
-                </h4>
-                <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
-                  Pendekatan geospasial dan penginderaan jauh untuk eksplorasi mineral dan interpretasi geologi.
-                </p>
+            <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
+              <div className="relative h-48 w-full bg-stone-800/50 flex items-center justify-center text-stone-600 text-xs">
+                {/* Tempatkan <Image /> jika ada gambar */}
+                <span>No Image Available</span>
               </div>
-              <div className="mt-5 pt-3 border-t border-stone-800">
-                <a href="#" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
-                  Read Article <span className="ml-1">→</span>
-                </a>
+              <div className="flex flex-1 flex-col justify-between p-5">
+                <div>
+                  <span className="text-[11px] font-medium text-rose-400">01 Agustus 2026</span>
+                  <h4 className="mt-2 text-base font-semibold text-stone-100 hover:text-rose-300">
+                    <a href="#">Eksplorasi Mineral Kalimantan</a>
+                  </h4>
+                  <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
+                    Pendekatan geospasial dan penginderaan jauh untuk eksplorasi mineral dan interpretasi geologi.
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-stone-800">
+                  <a href="#" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
+                    Read Article <span className="ml-1">→</span>
+                  </a>
+                </div>
               </div>
             </article>
           </div>
