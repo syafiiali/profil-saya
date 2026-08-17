@@ -1,9 +1,12 @@
 name: Latest blog post workflow
 on:
   schedule:
-    # Berjalan otomatis setiap hari (pukul 00:00 UTC)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Supaya bisa dijalankan manual kapan saja
+  workflow_dispatch:
+
+# TAMBAHKAN DUA BARIS INI
+permissions:
+  contents: write
 
 jobs:
   update-readme-with-blog:
