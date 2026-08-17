@@ -14,6 +14,9 @@ export default function Home() {
             <a href="#about" className="transition hover:text-cyan-400">
               About
             </a>
+            <a href="#news" className="transition hover:text-cyan-400">
+              News
+            </a>
             <a href="#research" className="transition hover:text-cyan-400">
               Research
             </a>
@@ -109,6 +112,97 @@ export default function Home() {
               to mining, mineral exploration, environmental applications,
               geodiversity, and sustainable community development.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* News & Updates Section (PENAMBAHAN BARU) */}
+      <section id="news" className="border-t border-white/10 bg-slate-900/30 px-6 py-24">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+            News & Updates
+          </p>
+
+          <h2 className="mt-3 text-4xl font-bold">Latest Articles</h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Kartu Berita 1 */}
+            <article className="flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900 p-7 transition hover:-translate-y-1 hover:border-cyan-400/40">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                  17 Agustus 2026
+                </span>
+                <h3 className="mt-3 text-xl font-bold leading-snug text-white hover:text-cyan-300">
+                  <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka">
+                    Program Pemberdayaan Pengrajin Batu Mulia Cempaka Berjalan: Dari Modernisasi Produksi hingga Pendampingan NIB
+                  </a>
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-slate-400">
+                  Program Pengabdian kepada Masyarakat (PkM) tim ULM mendorong transformasi pengrajin batu mulia Cempaka dari pola produksi tradisional menuju usaha modern, produktif, dan berlegalitas.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-white/5">
+                <a
+                  href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka"
+                  className="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300"
+                >
+                  Read Full Article <span className="ml-1">→</span>
+                </a>
+              </div>
+            </article>
+
+            {/* Kartu Berita 2 (Contoh) */}
+            <article className="flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900 p-7 transition hover:-translate-y-1 hover:border-cyan-400/40">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                  15 Agustus 2026
+                </span>
+                <h3 className="mt-3 text-xl font-bold leading-snug text-white hover:text-cyan-300">
+                  <a href="#">
+                    Penelitian Geopark Meratus
+                  </a>
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-slate-400">
+                  Riset dan eksplorasi geodiversitas serta potensi warisan geologi di kawasan Meratus.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-white/5">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300"
+                >
+                  Read Full Article <span className="ml-1">→</span>
+                </a>
+              </div>
+            </article>
+
+            {/* Kartu Berita 3 (Contoh) */}
+            <article className="flex flex-col justify-between rounded-2xl border border-white/10 bg-slate-900 p-7 transition hover:-translate-y-1 hover:border-cyan-400/40">
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                  01 Agustus 2026
+                </span>
+                <h3 className="mt-3 text-xl font-bold leading-snug text-white hover:text-cyan-300">
+                  <a href="#">
+                    Eksplorasi Mineral Kalimantan
+                  </a>
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-slate-400">
+                  Pendekatan geospasial dan penginderaan jauh untuk eksplorasi mineral dan interpretasi geologi.
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-white/5">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300"
+                >
+                  Read Full Article <span className="ml-1">→</span>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
