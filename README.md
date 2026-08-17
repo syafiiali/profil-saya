@@ -37,5 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### 📰 Berita & Publikasi Terbaru
 <!-- BLOG-POST-LIST:START -->
+- [Penelitian Geopark Meratus](https://www.alisyafii.id/blog/geopark-meratus)
+- [Eksplorasi Mineral Kalimantan](https://www.alisyafii.id/blog/eksplorasi-mineral)
 <!-- BLOG-POST-LIST:END -->
 
