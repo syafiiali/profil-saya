@@ -2,11 +2,10 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   const posts = [ 
-    " "
     { 
       title: "Program Pemberdayaan Pengrajin Batu Mulia Cempaka Berjalan: Dari Modernisasi Produksi hingga Pendampingan NIB", 
       link: "https://www.alisyafii.id/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka", 
-      date: "Mon, 17 Aug 2026 00:00:00 GMT" 
+      date: "Mon, 17 Aug 2026 00:00:00 GMT", // <-- Ditambahkan koma di sini
       description: `Banjarbaru, Kalimantan Selatan — Program Pengabdian kepada Masyarakat (PkM) bertajuk “Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka: Modernisasi Teknologi, Digitalisasi Tata Kelola, dan Diversifikasi Produk Hasil Samping Batuan” telah memasuki tahapan pelaksanaan dan pendampingan bersama Kelompok Usaha Bersama (KUB) Pengrajin Batu Mulia di bawah binaan Pokdarwis Trisakti Pumpung, Kelurahan Sungai Tiung, Kecamatan Cempaka, Kota Banjarbaru.
       Program yang dilaksanakan oleh tim Universitas Lambung Mangkurat (ULM) ini dirancang untuk mendorong transformasi usaha pengrajin batu mulia dari pola produksi tradisional menuju usaha yang lebih modern, produktif, memiliki nilai tambah, serta mampu memanfaatkan peluang pasar digital. Pokdarwis Trisakti Pumpung menjadi mitra sasaran dalam program ini dengan unit usaha pengrajin batu mulia sebagai salah satu penggerak ekonomi lokal.
       Pelaksanaan kegiatan mengacu pada pendekatan Inkubasi Akselerasi Usaha, yang mencakup modernisasi teknologi produksi, hilirisasi batuan sisa melalui konsep zero waste, transformasi manajemen dan pemasaran, serta penguatan legalitas usaha. Konsep tersebut dirancang untuk menangani persoalan mitra secara menyeluruh, mulai dari aspek produksi hingga pemasaran dan legalitas.
@@ -55,6 +54,7 @@ export async function GET() {
           <title>${post.title}</title>
           <link>${post.link}</link>
           <pubDate>${post.date}</pubDate>
+          ${post.description ? `<description><![CDATA[${post.description}]]></description>` : ''}
         </item>
       `).join('')}
     </channel>
