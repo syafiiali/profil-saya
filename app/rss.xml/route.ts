@@ -38,3 +38,28 @@ export async function GET() {
     },
   });
 }
+
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  const posts = [
+    // 📰 Berita Baru yang Baru Anda Tambahkan:
+    { 
+      title: "Penerapan Machine Learning untuk Pemetaan Pertambangan", 
+      link: "https://www.alisyafii.id/research/machine-learning-mining", 
+      date: "Mon, 17 Aug 2026 00:00:00 GMT" 
+    },
+    // Berita lama sebelumnya:
+    { 
+      title: "Penelitian Geopark Meratus", 
+      link: "https://www.alisyafii.id/blog/geopark-meratus", 
+      date: "Sat, 15 Aug 2026 00:00:00 GMT" 
+    },
+    { 
+      title: "Eksplorasi Mineral Kalimantan", 
+      link: "https://www.alisyafii.id/blog/eksplorasi-mineral", 
+      date: "Sat, 01 Aug 2026 00:00:00 GMT" 
+    }
+  ];
+
+  // Kode fungsi XML di bawahnya tetap sama...
