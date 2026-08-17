@@ -1,0 +1,16 @@
+name: Latest blog post workflow
+on:
+  schedule:
+    # Berjalan otomatis setiap hari (pukul 00:00 UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Supaya bisa dijalankan manual kapan saja
+
+jobs:
+  update-readme-with-blog:
+    name: Update README dengan berita terbaru
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "https://www.alisyafii.id/rss.xml"
