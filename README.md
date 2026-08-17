@@ -1,107 +1,36 @@
-# 👋 Hi, I'm Ahmad Ali Syafi'i
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### Mining Engineering Lecturer | GIS & Remote Sensing | Mining Technology
+## Getting Started
 
-I am a Mining Engineering Lecturer at **Universitas Lambung Mangkurat (ULM)**, Indonesia, with interests in mining technology, geospatial applications, remote sensing, photogrammetry, mineral exploration, and community development.
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🎓 Academic Profile
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- 🏫 **Universitas Lambung Mangkurat**
-- ⛏️ **Mining Engineering**
-- 👨‍🏫 Lecturer & Academic Researcher
-- 🌏 South Kalimantan, Indonesia
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🔬 Research Interests
+## Learn More
 
-My research interests focus on the application of technology and geospatial methods to support sustainable mining and regional development.
+To learn more about Next.js, take a look at the following resources:
 
-- 🛰️ Geographic Information Systems (GIS)
-- 🌍 Remote Sensing & Earth Observation
-- ⛏️ Mineral Exploration
-- 📷 Photogrammetry
-- 🗺️ Geospatial Data Analysis
-- 🤖 Machine Learning for Mining
-- 🌱 Sustainable Mining & Environmental Applications
-- 🤝 Community Empowerment & Local Economic Development
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 💻 Tools & Technologies
+## Deploy on Vercel
 
-### GIS & Geospatial
-- ArcGIS Pro
-- QGIS
-- Google Earth Engine
-- DEM & Spatial Analysis
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Remote Sensing
-- ASTER
-- Landsat
-- Sentinel-2
-- PCA / Crosta Technique
-- Band Ratio Analysis
-
-### Data & Programming
-- Python
-- Machine Learning
-- Random Forest
-- Support Vector Machine (SVM)
-- XGBoost
-
-### Mining Technology
-- Mine Planning & Design
-- Mine Modeling
-- Mineral Exploration
-- Mining Geospatial Applications
-
----
-
-## 📚 Academic & Professional Activities
-
-- 🎓 Teaching & Learning in Mining Engineering
-- 🔬 Research & Scientific Publications
-- 🤝 Community Service / Community Development
-- 🌏 Geodiversity & Geopark Research
-- 💎 Mineral & Gemstone Community Empowerment
-- 🛰️ Geospatial Technology Development
-- ⛏️ Mining Technology & Digitalization
-
----
-
-## 🚀 Featured Focus
-
-> **Technology • Mining • Geospatial • Research • Community**
-
-I am interested in developing interdisciplinary approaches that connect **mining engineering, geospatial technology, environmental sustainability, research, and community empowerment**.
-
----
-
-## 📊 Areas of Contribution
-
-| Area | Focus |
-|---|---|
-| ⛏️ Mining Engineering | Exploration, Mining Technology & Planning |
-| 🛰️ Geospatial | GIS, Remote Sensing & Spatial Analysis |
-| 📷 Photogrammetry | Mapping & 3D Data Acquisition |
-| 🔬 Research | Mineral Exploration & Geodiversity |
-| 🌱 Environment | Sustainable Mining Applications |
-| 🤝 Community | Technology Transfer & Empowerment |
-
----
-
-## 🌐 Connect With Me
-
-- 🏫 **Mining Engineering – Universitas Lambung Mangkurat**
-- 🌐 Website: https://mining.ft.ulm.ac.id
-
----
-
-### ⭐ Thank you for visiting my profile!
-
-Feel free to explore my repositories, research projects, and academic activities.
-
-**Let's connect technology, mining, research, and community development for a sustainable future.**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
