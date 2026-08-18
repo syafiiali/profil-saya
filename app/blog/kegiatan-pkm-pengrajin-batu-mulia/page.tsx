@@ -21,28 +21,32 @@ export default function DetailVideoPKM() {
         <span>Dipublikasikan pada 15 Agustus 2026</span> • <span>Tim PkM ULM</span>
       </div>
 
-      {/* 📹 KOLOM PEMUTAR VIDEO / THUMBNAIL VIDEO UTAMA */}
-      <div className="relative w-full aspect-video mb-8 overflow-hidden rounded-2xl border border-stone-800 shadow-xl bg-stone-900 flex items-center justify-center">
-        {/* OPSI A: Jika menggunakan Embed YouTube (Ganti ID VIDEO_YOUTUBE_ANDA) */}
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/VIDEO_YOUTUBE_ANDA"
-          title="Video Kegiatan PKM Batu Mulia Cempaka"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-
-        {/* OPSI B: Jika menggunakan gambar thumbnail yang dipasang link (Uncomment jika tidak memakai iframe) */}
-        {/* 
-        <a href="LINK_VIDEO_YOUTUBE_ATAU_DRIVE" target="_blank" rel="noreferrer" className="relative w-full h-full group">
-          <img src="/batu-mulia.jpg" alt="Thumbnail Video PKM" className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-300" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="h-16 w-16 rounded-full bg-rose-700/90 flex items-center justify-center text-white shadow-lg group-hover:bg-rose-600 transition-colors">
-              <svg className="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      {/* 📹 THUMBNAIL VIDEO INTERAKTIF */}
+      <div className="relative w-full aspect-video mb-8 overflow-hidden rounded-2xl border border-stone-800 shadow-xl bg-stone-900 group">
+        <a 
+          href="https://youtu.be/BHxvEU9yIEI?si=NleT2gXpsIlO0597" 
+          target="_blank" 
+          rel="noreferrer"
+          className="block relative w-full h-full"
+        >
+          {/* Gambar Thumbnail dari YouTube */}
+          <img 
+            src="https://img.youtube.com/vi/BHxvEU9yIEI/maxresdefault.jpg" 
+            alt="Thumbnail Video PKM Batu Mulia Cempaka" 
+            className="w-full h-full object-cover brightness-90 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300"
+          />
+          {/* Overlay & Tombol Play */}
+          <div className="absolute inset-0 bg-stone-950/40 flex flex-col items-center justify-center transition-opacity group-hover:bg-stone-950/20">
+            <div className="h-16 w-16 md:h-20 md:w-20 rounded-full bg-rose-700/90 flex items-center justify-center text-white shadow-2xl group-hover:bg-rose-600 group-hover:scale-110 transition-all duration-300">
+              <svg className="w-8 h-8 md:w-10 md:h-10 fill-current ml-1" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
             </div>
+            <span className="mt-3 text-xs md:text-sm font-semibold text-white drop-shadow bg-stone-950/60 px-3 py-1 rounded-full border border-stone-800">
+              Klik untuk Memutar Video di YouTube
+            </span>
           </div>
         </a>
-        */}
       </div>
 
       {/* Deskripsi & Ringkasan Kegiatan */}
@@ -90,7 +94,7 @@ export default function DetailVideoPKM() {
         {/* Tombol Tautan Langsung Video */}
         <div className="pt-4 flex flex-wrap gap-4 items-center">
           <a
-            href="https://youtu.be/BHxvEU9yIEI?si=NleT2gXpsIlO0597" // Ganti link video asli Anda
+            href="https://youtu.be/BHxvEU9yIEI?si=NleT2gXpsIlO0597"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center rounded-lg bg-rose-800 px-6 py-3 text-xs font-semibold text-white hover:bg-rose-700 transition-colors"
