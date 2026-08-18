@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 // Bagian ini yang diubah:
 export const metadata: Metadata = {
   title: "Ahmad Ali Syafi'i",
-  description: "Website profil pribadi milik saya",
+  description: "dosenxplore",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
