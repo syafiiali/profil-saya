@@ -37,6 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### 📰 Berita & Publikasi Terbaru
 <!-- BLOG-POST-LIST:START -->
+- [Program Pemberdayaan Pengrajin Batu Mulia Cempaka Berjalan: Dari Modernisasi Produksi hingga Pendampingan NIB](https://www.alisyafii.id/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka)
 - [Penelitian Geopark Meratus](https://www.alisyafii.id/blog/geopark-meratus)
 - [Eksplorasi Mineral Kalimantan](https://www.alisyafii.id/blog/eksplorasi-mineral)
 <!-- BLOG-POST-LIST:END -->
