@@ -96,13 +96,13 @@ export default function Home() {
           <h3 className="mt-1 text-2xl font-bold text-white">Latest Articles</h3>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Berita 1 (Dengan Thumbnail) */}
+            {/* Berita 1 (Pengrajin Batu Mulia) */}
             <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
               <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka" className="relative h-48 w-full overflow-hidden">
                 <Image
-                  src="/batu-mulia.jpg" // sesuaikan nama file di folder public
+                  src="/batu-mulia.jpg"
                   alt="Program Pemberdayaan Pengrajin Batu Mulia Cempaka"
-                  fill
+                  fill  
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -130,25 +130,43 @@ export default function Home() {
               </div>
             </article>
 
-            {/* Berita 2 */}
+            {/* Berita 2 (PEMBERDAYAAN PKM & VIDEO DOKUMENTASI) */}
             <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
-              <div className="relative h-48 w-full bg-stone-800/50 flex items-center justify-center text-stone-600 text-xs">
-                {/* Tempatkan <Image /> jika ada gambar */}
-                <span>No Image Available</span>
-              </div>
+              <a href="/blog/kegiatan-pkm-pengrajin-batu-mulia" className="relative h-48 w-full overflow-hidden group">
+                <Image
+                  src="/batu-mulia.jpg" // atau ganti gambar thumbnail video lain di folder public
+                  alt="Video Kegiatan PKM ULM"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                {/* Icon Play Video Overlay */}
+                <div className="absolute inset-0 bg-stone-950/40 flex items-center justify-center">
+                  <div className="h-12 w-12 rounded-full bg-rose-700/90 flex items-center justify-center text-white shadow-lg group-hover:bg-rose-600 transition-colors">
+                    <svg className="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+              </a>
               <div className="flex flex-1 flex-col justify-between p-5">
                 <div>
-                  <span className="text-[11px] font-medium text-rose-400">15 Agustus 2026</span>
-                  <h4 className="mt-2 text-base font-semibold text-stone-100 hover:text-rose-300">
-                    <a href="#">Penelitian Geopark Meratus</a>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-medium text-rose-400">15 Agustus 2026</span>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider bg-rose-950 text-rose-300 px-2 py-0.5 rounded border border-rose-900/60">
+                      Video Dokumentasi
+                    </span>
+                  </div>
+                  <h4 className="mt-2 text-base font-semibold leading-snug text-stone-100 hover:text-rose-300">
+                    <a href="/blog/kegiatan-pkm-pengrajin-batu-mulia">
+                      Dokumentasi Video: Pelaksanaan Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka
+                    </a>
                   </h4>
                   <p className="mt-3 text-xs leading-relaxed text-stone-400 line-clamp-3">
-                    Riset dan eksplorasi geodiversitas serta potensi warisan geologi di kawasan Meratus.
+                    Tayangan dokumentasi video pelaksanaan program pengabdian masyarakat ULM dalam mengawal modernisasi produksi, penerapan K3, serta hilirisasi produk batu mulia.
                   </p>
                 </div>
                 <div className="mt-5 pt-3 border-t border-stone-800">
-                  <a href="#" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
-                    Read Article <span className="ml-1">→</span>
+                  <a href="/blog/kegiatan-pkm-pengrajin-batu-mulia" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
+                    Tonton Video & Baca Berita <span className="ml-1">→</span>
                   </a>
                 </div>
               </div>
@@ -157,7 +175,6 @@ export default function Home() {
             {/* Berita 3 */}
             <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
               <div className="relative h-48 w-full bg-stone-800/50 flex items-center justify-center text-stone-600 text-xs">
-                {/* Tempatkan <Image /> jika ada gambar */}
                 <span>No Image Available</span>
               </div>
               <div className="flex flex-1 flex-col justify-between p-5">
