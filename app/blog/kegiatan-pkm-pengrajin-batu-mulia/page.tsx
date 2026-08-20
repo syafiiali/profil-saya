@@ -1,4 +1,35 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+// 🌐 METADATA FEATURE IMAGE KHUSUS ARTIKEL INI
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Dokumentasi Video: Pelaksanaan Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka",
+    description: "Tayangan dokumentasi video pelaksanaan program pengabdian masyarakat ULM dalam mengawal modernisasi produksi, penerapan K3, serta hilirisasi produk batu mulia.",
+    openGraph: {
+      title: "Dokumentasi Video: Pelaksanaan Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka",
+      description: "Tayangan dokumentasi video pelaksanaan program pengabdian masyarakat ULM dalam mengawal modernisasi produksi, penerapan K3, serta hilirisasi produk batu mulia.",
+      url: "https://www.alisyafii.id/blog/kegiatan-pkm-pengrajin-batu-mulia",
+      siteName: "Ahmad Ali Syafi'i",
+      images: [
+        {
+          url: "https://img.youtube.com/vi/BHxvEU9yIEI/maxresdefault.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Dokumentasi Video PKM Batu Mulia Cempaka ULM",
+        },
+      ],
+      locale: "id_ID",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Dokumentasi Video: Pelaksanaan Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka",
+      description: "Tayangan dokumentasi video pelaksanaan program pengabdian masyarakat ULM.",
+      images: ["https://img.youtube.com/vi/BHxvEU9yIEI/maxresdefault.jpg"],
+    },
+  };
+}
 
 export default function DetailVideoPKM() {
   return (
