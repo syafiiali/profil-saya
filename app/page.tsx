@@ -174,7 +174,7 @@ export default function Home() {
 
             {/* Berita 3 (DIPERBARUI: Monev Internal PKM Batu Mulia) */}
             <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
-              <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka" className="relative h-48 w-full overflow-hidden">
+              <a href="/blog/monev-internal-pkm-batu-mulia" className="relative h-48 w-full overflow-hidden">
                 <Image
                   src="/monev1.jpg"
                   alt="Monev Internal ULM Program PKM Batu Mulia Cempaka"
@@ -187,7 +187,7 @@ export default function Home() {
                 <div>
                   <span className="text-[11px] font-medium text-rose-400">25 Agustus 2026</span>
                   <h4 className="mt-2 text-base font-semibold leading-snug text-stone-100 hover:text-rose-300">
-                    <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka">
+                    <a href="/blog/monev-internal-pkm-batu-mulia">
                       Tim Pengabdian ULM Ikuti Monev Internal Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka
                     </a>
                   </h4>
