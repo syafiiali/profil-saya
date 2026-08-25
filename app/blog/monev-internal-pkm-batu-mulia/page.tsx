@@ -9,7 +9,7 @@ export default function DetailBeritaMonev() {
 
   // Path gambar di folder public/
   const thumbnailImg = "/monev1.jpg"; 
-  const contentImg = "/monev2.jpg";   
+  const contentImg = "/monev2.jpeg";   
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-12 text-stone-800 font-sans">
