@@ -10,9 +10,15 @@ export const metadata: Metadata = {
     siteName: "Ahmad Ali Syafi'i",
     images: [
       {
-        url: "https://www.alisyafii.id/monev1.jpg", // Menggunakan URL penuh domain domain Anda
+        url: "https://www.alisyafii.id/monev1.jpg", // Gambar 16:9 Standard OpenGraph (Landscape)
         width: 1200,
         height: 630,
+        alt: "Tim Pengabdian ULM Ikuti Monev Internal Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka",
+      },
+      {
+        url: "https://www.alisyafii.id/monev1.jpg", // Opsi Fallback 1:1 khusus WhatsApp / Chat Client (Square)
+        width: 600,
+        height: 600,
         alt: "Tim Pengabdian ULM Ikuti Monev Internal Program Akselerasi Pemberdayaan Pengrajin Batu Mulia Cempaka",
       },
     ],
