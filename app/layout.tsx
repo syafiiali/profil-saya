@@ -12,22 +12,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Metadata lengkap dengan fitur Open Graph (Pratinjau Gambar & Deskripsi)
+// Metadata lengkap dengan fitur SEO Google & Open Graph
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.alisyafii.id"),
-  title: "Ahmad Ali Syafi'i",
-  description: "Dosen & Peneliti Teknik Pertambangan, Teknologi Geospasial, dan Pengabdian Masyarakat.",
+  title: {
+    default: "Ahmad Ali Syafi'i | Dosen & Peneliti Teknik Pertambangan ULM",
+    template: "%s | Ahmad Ali Syafi'i",
+  },
+  description: "Portofolio akademik, riset teknologi geospasial, penginderaan jauh, dan kegiatan pengabdian masyarakat Ir. Ahmad Ali Syafi'i, S.T., M.T., IPP. dari Universitas Lambung Mangkurat.",
+  keywords: [
+    "Ahmad Ali Syafi'i",
+    "Dosen Teknik Pertambangan ULM",
+    "Penginderaan Jauh Pertambangan",
+    "GIS Pertambangan",
+    "Universitas Lambung Mangkurat",
+    "PKM Batu Mulia Cempaka",
+    "Geospatial Technology",
+    "Remote Sensing",
+  ],
+  authors: [{ name: "Ahmad Ali Syafi'i" }],
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "Ahmad Ali Syafi'i",
-    description: "Dosen & Peneliti Teknik Pertambangan, Teknologi Geospasial, dan Pengabdian Masyarakat.",
+    title: "Ahmad Ali Syafi'i | Mining Engineering Lecturer & Researcher",
+    description: "Portofolio akademik, riset teknologi geospasial, penginderaan jauh, dan kegiatan pengabdian masyarakat Ahmad Ali Syafi'i di Universitas Lambung Mangkurat.",
     url: "https://www.alisyafii.id",
     siteName: "Ahmad Ali Syafi'i",
     images: [
       {
-        url: "/opengraph-image.png", // Mengambil gambar dari folder public/batu-mulia.jpg
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Ahmad Ali Syafi'i - Featured Image",
@@ -38,16 +52,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Ali Syafi'i",
-    description: "Dosen & Peneliti Teknik Pertambangan, Teknologi Geospasial, dan Pengabdian Masyarakat.",
-    images: ["/opengraph-image.png"], // 
+    title: "Ahmad Ali Syafi'i | Mining Engineering Lecturer & Researcher",
+    description: "Portofolio akademik, riset teknologi geospasial, penginderaan jauh, dan kegiatan pengabdian masyarakat Ahmad Ali Syafi'i di Universitas Lambung Mangkurat.",
+    images: ["/opengraph-image.png"],
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
