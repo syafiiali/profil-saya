@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Gunakan URL persis seperti ini
   const baseUrl = 'https://alisyafii.id'
 
   return [
@@ -13,19 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/monev-internal-pkm-batu-mulia`,
-      lastModified: new Date('2026-08-25'),
+      lastModified: new Date('2026-08-25T00:00:00.000Z'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka`,
-      lastModified: new Date('2026-08-17'),
+      lastModified: new Date('2026-08-17T00:00:00.000Z'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/kegiatan-pkm-pengrajin-batu-mulia`,
-      lastModified: new Date('2026-08-15'),
+      lastModified: new Date('2026-08-15T00:00:00.000Z'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
