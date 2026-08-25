@@ -172,7 +172,7 @@ export default function Home() {
               </div>
             </article>
 
-            {/* Berita 3 (DIPERBARUI: Monev Internal PKM Batu Mulia) */}
+            {/* Berita 3 (Monev Internal PKM Batu Mulia) - SUDAH DIPERBAIKI */}
             <article className="flex flex-col overflow-hidden rounded-xl border border-stone-800/80 bg-stone-900/80 transition hover:border-rose-900/80">
               <a href="/blog/monev-internal-pkm-batu-mulia" className="relative h-48 w-full overflow-hidden">
                 <Image
@@ -196,7 +196,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-5 pt-3 border-t border-stone-800">
-                  <a href="/blog/monev-internal-pkm-batu-mulia">
+                  <a
+                    href="/blog/monev-internal-pkm-batu-mulia"
+                    className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300"
+                  >
                     Read Article <span className="ml-1">→</span>
                   </a>
                 </div>
