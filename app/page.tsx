@@ -249,7 +249,7 @@ export default function Home() {
           <div className="shrink-0">
             <div className="relative h-44 w-44 overflow-hidden rounded-full border-2 border-rose-900/60 shadow-xl shadow-rose-950/40 md:h-52 md:w-52">
               <Image
-                src="/profil.jpg"
+                src="/profil.png"
                 alt="Ahmad Ali Syafi'i"
                 fill
                 sizes="(max-width: 768px) 176px, 208px"
