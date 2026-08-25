@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.alisyafii.id'
+  // Gunakan URL persis seperti ini
+  const baseUrl = 'https://alisyafii.id'
 
   return [
     {
