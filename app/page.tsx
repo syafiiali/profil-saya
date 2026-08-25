@@ -381,13 +381,16 @@ export default function Home() {
 
           <div className="mt-6 flex flex-wrap gap-2">
             {[
-              "GIS Pertambangan",
+              "SIG Pertambangan",
               "Fotogrametri Pertambangan",
               "Teknik Eksplorasi",
               "Metode Numerik",
               "Genesa Bahan Galian",
               "Perpetaan Tambang",
               "Pengantar Teknologi Informasi",
+              "Geologi Struktur",
+              "Metode Penelitian dan Karya Ilmiah",
+              "Penginderaan Jauh dan Geomorfologi",
             ].map((course) => (
               <span
                 key={course}
