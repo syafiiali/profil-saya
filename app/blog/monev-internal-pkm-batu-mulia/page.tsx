@@ -79,13 +79,21 @@ export default function DetailBeritaMonev() {
             <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
               <h4 className="text-sm font-bold text-rose-700">Ketua Tim Pelaksana</h4>
               <p className="text-xs text-stone-800 font-semibold mt-1">Ir. Ahmad Ali Syafi'i, S.T., M.T., IPP.</p>
-              <p className="text-[11px] text-stone-500">Dosen Teknik Pertambangan ULM</p>
+              <p className="text-[11px] text-stone-500">Dosen Teknik Pertambangan, Fakultas Teknik ULM</p>
             </div>
 
             <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
               <h4 className="text-sm font-bold text-rose-700">Anggota Tim Dosen</h4>
-              <p className="text-xs text-stone-800 font-semibold mt-1">Anjani, S.A.P., M.A.P.</p>
-              <p className="text-xs text-stone-800 font-semibold mt-0.5">Arisandy Mursalin, S.H., M.H.</p>
+              <div className="mt-1 space-y-1.5">
+                <div>
+                  <p className="text-xs text-stone-800 font-semibold">Anjani, S.A.P., M.A.P.</p>
+                  <p className="text-[11px] text-stone-500">Dosen Administrasi Publik, FISIP ULM</p>
+                </div>
+                <div>
+                  <p className="text-xs text-stone-800 font-semibold">Arisandy Mursalin, S.H., M.H.</p>
+                  <p className="text-[11px] text-stone-500">Dosen Hukum, Fakultas Hukum ULM</p>
+                </div>
+              </div>
             </div>
 
             <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm">
