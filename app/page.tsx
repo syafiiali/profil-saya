@@ -245,15 +245,15 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Profil Visual Minimalis */}
+          {/* Profil Visual Minimalis - SUDAH DIPERBAIKI (TANPA GARIS PUTIH) */}
           <div className="shrink-0">
-            <div className="relative h-44 w-44 overflow-hidden rounded-full border-2 border-rose-900/60 shadow-xl shadow-rose-950/40 md:h-52 md:w-52">
+            <div className="relative h-44 w-44 overflow-hidden rounded-full border-2 border-rose-900/60 shadow-xl shadow-rose-950/40 md:h-52 md:w-52 bg-stone-900">
               <Image
                 src="/profil.png"
                 alt="Ahmad Ali Syafi'i"
                 fill
                 sizes="(max-width: 768px) 176px, 208px"
-                className="object-cover"
+                className="object-cover scale-105"
               />
             </div>
           </div>
