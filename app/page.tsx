@@ -196,7 +196,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-5 pt-3 border-t border-stone-800">
-                  <a href="/blog/program-pemberdayaan-pengrajin-batu-mulia-cempaka" className="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300">
+                  <a href="/blog/monev-internal-pkm-batu-mulia">
                     Read Article <span className="ml-1">→</span>
                   </a>
                 </div>
